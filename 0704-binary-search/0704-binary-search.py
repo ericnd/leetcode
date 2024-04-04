@@ -6,11 +6,11 @@ class Solution:
         while l <= r:
             m = (l + r) // 2
             
-            if nums[m] == target:
-                return m
             if nums[m] > target:
                 r = m - 1
-            else:
+            elif nums[m] < target:
                 l = m + 1
+            else:
+                return m
             
         return -1
