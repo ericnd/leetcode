@@ -3,10 +3,9 @@ class Solution:
         dp = {}
         
         def climb(s):
-            ways = 0
             if s in dp:
                 return dp[s]
-            
+
             if s <= 3:
                 return s
             
